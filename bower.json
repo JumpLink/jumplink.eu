@@ -1,0 +1,16 @@
+{
+  "name": "jumplink.eu",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JumpLink/jumplink.eu.git"
+  },
+  "author": "Pascal Garber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JumpLink/jumplink.eu/issues"
+  },
+  "homepage": "https://github.com/JumpLink/jumplink.eu#readme"
+}
