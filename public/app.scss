@@ -1,0 +1,23 @@
+// variables TODO move to locals
+$font-family-sans-serif: 'Ubuntu', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// https://www.google.com/fonts#UsePlace:use/Collection:Ubuntu
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
+// https://www.google.com/fonts#UsePlace:use/Collection:Roboto
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,400italic,300italic,900italic,700italic,500italic,500,700,900);
+
+body {
+  font-weight: 400;
+  // font-style: italic;
+}
+
+.navbar-brand {
+  min-width: 40px;
+  background-image: url(../images/logo_inverse.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 100%;
+  padding-left: 50px;
+}

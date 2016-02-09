@@ -5,11 +5,22 @@ html(lang='en')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
-    // Bootstrap CSS
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css', integrity='sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd', crossorigin='anonymous')
-    link(rel='stylesheet', href='./bower/bootstrap/scss/bootstrap.scss')
+    link(rel='stylesheet', href='./app.scss')
   body
+    nav.navbar.navbar-fixed-top.navbar-dark.bg-inverse
+      .container
+        a.navbar-brand(href='#') JumpLink
+        ul.nav.navbar-nav
+          li.nav-item.active
+            a.nav-link(href='#')
+              | Home 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='#') Features
+          li.nav-item
+            a.nav-link(href='#') Pricing
+          li.nav-item
+            a.nav-link(href='#') About
     h1 Hello, world!
     // jQuery first, then Bootstrap JS.
-    script(src='./bower/jquery/dist/jquery.min.js')
-    script(src='./bower/bootstrap/dist/js/bootstrap.min.js')
+    script(src='./app.js')

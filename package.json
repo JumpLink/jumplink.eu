@@ -1,0 +1,29 @@
+{
+  "name": "jumplink.eu",
+  "version": "0.0.0",
+  "description": "",
+  "main": "public/assets/scripts/app.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --progress --colors",
+    "build:prod": "./node_modules/.bin/webpack --progress --colors -p -d",
+    "watch": "npm run build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JumpLink/jumplink.eu.git"
+  },
+  "author": "Pascal Garber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JumpLink/jumplink.eu/issues"
+  },
+  "homepage": "https://github.com/JumpLink/jumplink.eu#readme",
+  "dependencies": {
+    "webpack": "^1.12.13"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "jquery": "^2.2.0",
+    "tether": "^1.1.1"
+  }
+}
