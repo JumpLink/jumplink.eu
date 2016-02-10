@@ -1,8 +1,9 @@
 var $ = require('jquery');
 var Tether = require('tether');
-var locals = LOCALS; // local variables from injected from server
+var locals = require('variables.json');
+// var locals = LOCALS; // local variables from injected from server
 
-console.log("locals", locals);
+// console.log(test);
 
 window.Tether = Tether;
 window.jQuery = $;
