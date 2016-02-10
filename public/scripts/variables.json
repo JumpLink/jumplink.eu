@@ -1,1 +1,15 @@
-{}
+{
+  "colors": {
+    "gray-dark": "{gray-dark}",
+    "gray": "{gray}",
+    "gray-light": "{gray-light}",
+    "gray-lighter": "{gray-lighter}",
+    "gray-lightest": "{gray-lightest}",
+
+    "brand-primary": "{brand-primary}",
+    "brand-success": "{brand-success}",
+    "brand-info": "{brand-info}",
+    "brand-warning": "{brand-warning}",
+    "brand-danger": "{brand-danger}"
+  }
+}

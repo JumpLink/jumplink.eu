@@ -1,0 +1,85 @@
+[
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Use class=\"color\" on a an input tag to bring up the color picker. Only a few colors have been included here as an example."
+      },
+      {
+        "type": "header",
+        "content": "General Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_primary",
+        "label": "Primary Color",
+        "default": "#204a80",
+        "info": "Used for text links, and primary buttons"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary",
+        "label": "Secondary Color",
+        "default": "#dcdcdc",
+        "info": "Used for secondary buttons"
+      },
+      {
+        "type": "color",
+        "id": "color_body_bg",
+        "label": "Body Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_borders",
+        "label": "Border Colors",
+        "default": "#e5e5e5"
+      },
+      {
+        "type": "color",
+        "id": "hover_color",
+        "label": "Hover Colors",
+        "default": "#ffa29f"
+      },
+      {
+        "type": "color",
+        "id": "hover_text_color",
+        "label": "Hover Text Colors",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Body Text"
+      },
+      {
+        "type": "color",
+        "id": "color_body_text",
+        "label": "Body Text",
+        "default": "#333333"
+      },
+      {
+        "type": "header",
+        "content": "Footer"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_bg",
+        "label": "Footer Background",
+        "default": "#f2f2f2"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_text",
+        "label": "Footer Text",
+        "default": "#636363"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_social_link",
+        "label": "Social Icons",
+        "default": "#bbbbbb"
+      }
+    ]
+  },
+]
