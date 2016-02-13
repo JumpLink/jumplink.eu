@@ -3,12 +3,12 @@
     "name": "Colors",
     "settings": [
       {
-        "type": "paragraph",
-        "content": "Grayscale and brand colors for use across Bootstrap."
-      },
-      {
         "type": "header",
         "content": "Grayscale Colors"
+      },
+      {
+        "type": "paragraph",
+        "content": "Grayscale and brand colors for use across Bootstrap."
       },
       {
         "type": "color",
@@ -53,36 +53,175 @@
         "default": "#0275d8"
       },
       {
-        "type": "header",
-        "content": "Body Text"
+        "type": "color",
+        "id": "brand-success",
+        "label": "brand-success",
+        "default": "#5cb85c"
       },
       {
         "type": "color",
-        "id": "color_body_text",
-        "label": "Body Text",
-        "default": "#333333"
-      },
-      {
-        "type": "header",
-        "content": "Footer"
+        "id": "brand-info",
+        "label": "brand-info",
+        "default": "#5bc0de"
       },
       {
         "type": "color",
-        "id": "color_footer_bg",
-        "label": "Footer Background",
-        "default": "#f2f2f2"
+        "id": "brand-warning",
+        "label": "brand-warning",
+        "default": "#f0ad4e"
       },
       {
         "type": "color",
-        "id": "color_footer_text",
-        "label": "Footer Text",
-        "default": "#636363"
+        "id": "brand-danger",
+        "label": "brand-danger",
+        "default": "#d9534f"
+      }
+    ]
+  },
+  {
+    "name": "Options",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Quickly modify global styling by enabling or disabling optional features."
+      },
+      {
+        "type": "checkbox",
+        "id": "enable-flex",
+        "label": "Enable Flex",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable-rounded",
+        "label": "Enable Rounded",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable-shadows",
+        "label": "Enable Shadows",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable-gradients",
+        "label": "Enable Gradients",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable-transitions",
+        "label": "Enable Transitions",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable-hover-media-query",
+        "label": "Enable Hover Media Query",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable-grid-classes",
+        "label": "Enable Grid Classes",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Spacing",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Control the default styling of most Bootstrap elements by modifying these variables. Mostly focused on spacing."
+      },
+      {
+        "type": "text",
+        "id": "spacer",
+        "label": "Spacer",
+        "default": "1rem"
+      },
+      {
+        "type": "text",
+        "id": "spacer-x",
+        "label": "Spacer X",
+        "default": "{spacer}"
+      },
+      {
+        "type": "text",
+        "id": "spacer-y",
+        "label": "Spacer Y",
+        "default": "{spacer}"
+      },
+      {
+        "type": "text",
+        "id": "border-width",
+        "label": "Border Width",
+        "default": "1px"
+      }
+    ]
+  },
+  {
+    "name": "Body",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Settings for the `<body>` element."
       },
       {
         "type": "color",
-        "id": "color_footer_social_link",
-        "label": "Social Icons",
-        "default": "#bbbbbb"
+        "id": "body-bg",
+        "label": "Body Background Color",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "body-color",
+        "label": "Body Color",
+        "default": "{gray-dark}"
+      }
+    ]
+  },
+  {
+    "name": "Links",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Style anchor elements."
+      },
+      {
+        "type": "color",
+        "id": "link-color",
+        "label": "Body Background Color",
+        "default": "{brand-primary}"
+      },
+      {
+        "type": "text",
+        "id": "link-decoration",
+        "label": "Link Decoration",
+        "default": "none"
+      },
+      {
+        "type": "color",
+        "id": "link-hover-color",
+        "label": "Link Hover Color",
+        "default": "darken({link-color}, 15%)"
+      },
+      {
+        "type": "text",
+        "id": "link-hover-decoration",
+        "label": "Link Hover Decoration",
+        "default": "underline"
+      }
+    ]
+  },
+  {
+    "name": "Grid breakpoints",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Define the maximum width of `.container` for different screen sizes."
       }
     ]
   }

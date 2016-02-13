@@ -7,7 +7,7 @@ var bootstrap = require("bootstrap");
 
 var settings = {};
 
-$.getJSON( "scripts/settings.json", function( settings ) {
+$.getJSON( "assets/scripts/settings.json", function( settings ) {
 	console.log("settings", settings);
 });
 
