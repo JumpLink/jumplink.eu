@@ -1,6 +1,23 @@
 // variables TODO move to locals
 $font-family-sans-serif: 'Ubuntu', "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+// wrap theme variables to bootstrap variables
+$grid-breakpoints: (
+  xs: $grid-breakpoint-xs,
+  sm: $grid-breakpoint-sm,
+  md: $grid-breakpoint-md,
+  lg: $grid-breakpoint-lg,
+  xl: $grid-breakpoint-xl
+);
+
+$container-max-widths: (
+  sm: $container-max-width-sm,
+  md: $container-max-width-md,
+  lg: $container-max-width-lg,
+  xl: $container-max-width-xl
+);
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // https://www.google.com/fonts#UsePlace:use/Collection:Ubuntu

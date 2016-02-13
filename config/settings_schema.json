@@ -205,13 +205,13 @@
       {
         "type": "color",
         "id": "link-hover-color",
-        "label": "Link Hover Color",
+        "label": "Link hover color",
         "default": "darken({link-color}, 15%)"
       },
       {
         "type": "text",
         "id": "link-hover-decoration",
-        "label": "Link Hover Decoration",
+        "label": "Link hover decoration",
         "default": "underline"
       }
     ]
@@ -221,7 +221,100 @@
     "settings": [
       {
         "type": "paragraph",
+        "content": "Define the minimum and maximum dimensions at which your layout will change, adapting to different screen sizes, for use in media queries."
+      },
+      {
+        "type": "text",
+        "id": "grid-breakpoint-xs",
+        "label": "Extra small",
+        "default": "0",
+        "info": "Extra small screen / phone"
+      },
+      {
+        "type": "text",
+        "id": "grid-breakpoint-sm",
+        "label": "Small",
+        "default": "544px",
+        "info": "Small screen / phone"
+      },
+      {
+        "type": "text",
+        "id": "grid-breakpoint-md",
+        "label": "Medium",
+        "default": "768px",
+        "info": "Medium screen / tablet"
+      },
+      {
+        "type": "text",
+        "id": "grid-breakpoint-lg",
+        "label": "Large",
+        "default": "992px",
+        "info": "Large screen / desktop"
+      },
+      {
+        "type": "text",
+        "id": "grid-breakpoint-xl",
+        "label": "Extra large",
+        "default": "1200px",
+        "info": "Extra large screen / wide desktop"
+      }
+    ]
+  },
+  {
+    "name": "Grid containers",
+    "settings": [
+      {
+        "type": "paragraph",
         "content": "Define the maximum width of `.container` for different screen sizes."
+      },
+      {
+        "type": "text",
+        "id": "container-max-width-sm",
+        "label": "Small",
+        "default": "576px",
+        "info": "Small screen / phone"
+      },
+      {
+        "type": "text",
+        "id": "container-max-width-md",
+        "label": "Medium",
+        "default": "720px",
+        "info": "Medium screen / tablet"
+      },
+      {
+        "type": "text",
+        "id": "container-max-width-lg",
+        "label": "Large",
+        "default": "940px",
+        "info": "Large screen / desktop"
+      },
+      {
+        "type": "text",
+        "id": "container-max-width-xl",
+        "label": "Extra large",
+        "default": "1140px",
+        "info": "Extra large screen / wide desktop"
+      }
+    ]
+  },
+  {
+    "name": "Grid columns",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Set the number of columns and specify the width of the gutters."
+      },
+      {
+        "type": "number",
+        "id": "grid-columns",
+        "label": "Grid Columns",
+        "default": 12
+      },
+      {
+        "type": "text",
+        "id": "grid-gutter-width",
+        "label": "Grid Gutter Width",
+        "default": "1.875rem"
       }
     ]
   }
