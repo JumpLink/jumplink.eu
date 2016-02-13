@@ -155,6 +155,54 @@
         "default": "{spacer}"
       },
       {
+        "type": "number",
+        "id": "spacer-0-x",
+        "label": "Spacer 0 X",
+        "default": "0"
+      },
+      {
+        "type": "number",
+        "id": "spacer-0-y",
+        "label": "Spacer 0 Y",
+        "default": "0"
+      },
+      {
+        "type": "number",
+        "id": "spacer-1-x",
+        "label": "Spacer 1 X",
+        "default": "{spacer-x}"
+      },
+      {
+        "type": "number",
+        "id": "spacer-1-y",
+        "label": "Spacer 1 Y",
+        "default": "{spacer-y}"
+      },
+      {
+        "type": "number",
+        "id": "spacer-2-x",
+        "label": "Spacer 2 X",
+        "default": "({spacer-x} * 1.5)"
+      },
+      {
+        "type": "number",
+        "id": "spacer-2-y",
+        "label": "Spacer 2 Y",
+        "default": "({spacer-y} * 1.5)"
+      },
+      {
+        "type": "number",
+        "id": "spacer-3-x",
+        "label": "Spacer 3 X",
+        "default": "({spacer-x} * 3)"
+      },
+      {
+        "type": "number",
+        "id": "spacer-3-y",
+        "label": "Spacer 3 Y",
+        "default": "({spacer-y} * 3)"
+      },
+      {
         "type": "text",
         "id": "border-width",
         "label": "Border Width",
@@ -315,6 +363,2387 @@
         "id": "grid-gutter-width",
         "label": "Grid Gutter Width",
         "default": "1.875rem"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Font, line-height, and color for body text, headings, and more."
+      },
+      {
+        "type": "header",
+        "content": "Font Families"
+      },
+      {
+        "type": "text",
+        "id": "font-family-sans-serif",
+        "label": "Font family sans serif",
+        "default":"\"Source Sans Pro\", \"Roboto\", \"Helvetica Neue\", \"Ubuntu\", Helvetica, Arial, sans-serif"
+      },
+      {
+        "type": "text",
+        "id": "font-family-serif",
+        "label": "Font family serif",
+        "default": "Georgia, 'Times New Roman', Times, serif"
+      },
+      {
+        "type": "text",
+        "id": "font-family-monospace",
+        "label": "Font family monospace",
+        "default": "Menlo, Monaco, Consolas, 'Courier New', monospace"
+      },
+      {
+        "type": "text",
+        "id": "font-family-base",
+        "label": "Font family base",
+        "default": "{font-family-sans-serif}"
+      },
+      {
+        "type": "header",
+        "content": "Sizes"
+      },
+      {
+        "type": "paragraph",
+        "content": "Pixel value used to responsively scale all typography. Applied to the `<html>` element."
+      },
+      {
+        "type": "text",
+        "id": "font-size-root",
+        "label": "Font size root",
+        "default": "16px"
+      },
+      {
+        "type": "text",
+        "id": "font-size-base",
+        "label": "Font size base",
+        "default": "1rem"
+      },
+      {
+        "type": "text",
+        "id": "font-size-lg",
+        "label": "Font size large",
+        "default": "1.25rem"
+      },
+      {
+        "type": "text",
+        "id": "font-size-sm",
+        "label": "Font size small",
+        "default": ".875rem"
+      },
+      {
+        "type": "text",
+        "id": "font-size-xs",
+        "label": "Font size extra small",
+        "default": ".75rem"
+      },
+      {
+        "type": "text",
+        "id": "font-size-h1",
+        "label": "Font size header 1",
+        "default": "2.5rem"
+      },
+      {
+        "type": "text",
+        "id": "font-size-h2",
+        "label": "Font size header 2",
+        "default": "2rem"
+      },
+      {
+        "type": "text",
+        "id": "font-size-h3",
+        "label": "Font size header 3",
+        "default": "1.75rem"
+      },
+      {
+        "type": "text",
+        "id": "font-size-h4",
+        "label": "Font size header 4",
+        "default": "1.5rem"
+      },
+      {
+        "type": "text",
+        "id": "font-size-h5",
+        "label": "Font size header 5",
+        "default": "1.25rem"
+      },
+      {
+        "type": "text",
+        "id": "font-size-h6",
+        "label": "Font size header 6",
+        "default": "1rem"
+      },
+      {
+        "type": "text",
+        "id": "display1-size",
+        "label": "Display1 size",
+        "default": "6rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "display2-size",
+        "label": "Display2 size",
+        "default": "5.5rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "display3-size",
+        "label": "Display3 size",
+        "default": "4.5rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "display4-size",
+        "label": "Display4 size",
+        "default": "3.5rem",
+        "info": ""
+      },
+      {
+        "type": "number",
+        "id": "display1-weight",
+        "label": "Display1 weight",
+        "default": 300,
+        "info": ""
+      },
+      {
+        "type": "number",
+        "id": "display2-weight",
+        "label": "Display2 weight",
+        "default": 300,
+        "info": ""
+      },
+      {
+        "type": "number",
+        "id": "display3-weight",
+        "label": "Display3 weight",
+        "default": 300,
+        "info": ""
+      },
+      {
+        "type": "number",
+        "id": "display4-weight",
+        "label": "Display4 weight",
+        "default": 300,
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "line-height",
+        "label": "Line height",
+        "default": "1.5",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "headings-margin-bottom",
+        "label": "Headings margin bottom",
+        "default": "({spacer} / 2)",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "headings-font-family",
+        "label": "Headings font family",
+        "default": "inherit",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "headings-font-weight",
+        "label": "Headings font weight",
+        "default": "500",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "headings-line-height",
+        "label": "Headings line height",
+        "default": "1.1",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "headings-color",
+        "label": "Headings color",
+        "default": "inherit",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "lead-font-size",
+        "label": "Lead font size",
+        "default": "1.25rem",
+        "info": ""
+      },
+      {
+        "type": "number",
+        "id": "lead-font-weight",
+        "label": "Lead font weight",
+        "default": 300,
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "text-muted",
+        "label": "Text muted",
+        "default": "{gray-light}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "abbr-border-color",
+        "label": "Abbr border color",
+        "default": "{gray-light}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "blockquote-small-color",
+        "label": "Blockquote smallall color",
+        "default": "{gray-light}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "blockquote-font-size",
+        "label": "Blockquote font size",
+        "default": "({font-size-base} * 1.25)",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "blockquote-border-color",
+        "label": "Blockquote border color",
+        "default": "{gray-lighter}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "hr-border-color",
+        "label": "Hr border color",
+        "default": "rgba(0,0,0,.1)",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "hr-border-width",
+        "label": "Hr border width",
+        "default": "{border-width}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "dt-font-weight",
+        "label": "Dt font weight",
+        "default": "bold",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "nested-kbd-font-weight",
+        "label": "Nested kbd font weight",
+        "default": "bold",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "list-inline-padding",
+        "label": "List inline padding",
+        "default": "5px",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Components",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Define common padding and border radius sizes and more."
+      },
+      {
+        "type": "text",
+        "id": "line-height-lg",
+        "label": "Line height large",
+        "default": "(4 / 3)",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "line-height-sm",
+        "label": "Line height small",
+        "default": "1.5",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "border-radius",
+        "label": "Border radius",
+        "default": ".25rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "border-radius-lg",
+        "label": "Border radius large",
+        "default": ".3rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "border-radius-sm",
+        "label": "Border radius small",
+        "default": ".2rem",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "component-active-color",
+        "label": "Component active color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "component-active-bg",
+        "label": "Component active background",
+        "default": "{brand-primary}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "caret-width",
+        "label": "Caret width",
+        "default": ".3em",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "caret-width-lg",
+        "label": "Caret width large",
+        "default": "{caret-width}",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Tables",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": " Customizes the `.table` component with basic values, each used across all table variations."
+      },
+      {
+        "type": "text",
+        "id": "table-cell-padding",
+        "label": "Table cell padding",
+        "default": ".75rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "table-sm-cell-padding",
+        "label": "Table small cell padding",
+        "default": ".3rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "table-bg",
+        "label": "Table background",
+        "default": "transparent",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "table-bg-accent",
+        "label": "Table background accent",
+        "default": "#f9f9f9",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "table-bg-hover",
+        "label": "Table background hover",
+        "default": "#f5f5f5",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "table-bg-active",
+        "label": "Table background active",
+        "default": "{table-bg-hover}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "table-border-width",
+        "label": "Table border width",
+        "default": "{border-width}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "table-border-color",
+        "label": "Table border color",
+        "default": "{gray-lighter}",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Buttons",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "For each of Bootstrap's buttons, define text, background and border color."
+      },
+      {
+        "type": "text",
+        "id": "btn-padding-x",
+        "label": "Btn padding x",
+        "default": "1rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-padding-y",
+        "label": "Btn padding y",
+        "default": ".375rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-font-weight",
+        "label": "Btn font weight",
+        "default": "normal",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "btn-primary-color",
+        "label": "Btn primary color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-primary-bg",
+        "label": "Btn primary background",
+        "default": "{brand-primary}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-primary-border",
+        "label": "Btn primary border",
+        "default": "{btn-primary-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-secondary-color",
+        "label": "Btn secondary color",
+        "default": "{gray-dark}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "btn-secondary-bg",
+        "label": "Btn secondary background",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "btn-secondary-border",
+        "label": "Btn secondary border",
+        "default": "#ccc",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "btn-info-color",
+        "label": "Btn info color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-info-bg",
+        "label": "Btn info background",
+        "default": "{brand-info}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-info-border",
+        "label": "Btn info border",
+        "default": "{btn-info-bg}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "btn-success-color",
+        "label": "Btn success color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-success-bg",
+        "label": "Btn success background",
+        "default": "{brand-success}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-success-border",
+        "label": "Btn success border",
+        "default": "{btn-success-bg}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "btn-warning-color",
+        "label": "Btn warning color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-warning-bg",
+        "label": "Btn warning background",
+        "default": "{brand-warning}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-warning-border",
+        "label": "Btn warning border",
+        "default": "{btn-warning-bg}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "btn-danger-color",
+        "label": "Btn danger color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-danger-bg",
+        "label": "Btn danger background",
+        "default": "{brand-danger}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-danger-border",
+        "label": "Btn danger border",
+        "default": "{btn-danger-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-link-disabled-color",
+        "label": "Btn link disabled color",
+        "default": "{gray-light}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-padding-x-sm",
+        "label": "Btn padding x small",
+        "default": ".75rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-padding-y-sm",
+        "label": "Btn padding y small",
+        "default": ".25rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-padding-x-lg",
+        "label": "Btn padding x large",
+        "default": "1.25rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-padding-y-lg",
+        "label": "Btn padding y large",
+        "default": ".75rem",
+        "info": ""
+      },
+      {
+        "type": "paragraph",
+        "content": "Allows for customizing button radius independently from global border radius."
+      },
+      {
+        "type": "text",
+        "id": "btn-border-radius",
+        "label": "Btn border radius",
+        "default": "{border-radius}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-border-radius-lg",
+        "label": "Btn border radius large",
+        "default": "{border-radius-lg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "btn-border-radius-sm",
+        "label": "Btn border radius small",
+        "default": "{border-radius-sm}",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Forms",
+    "settings": [
+      {
+        "type": "text",
+        "id": "input-padding-x",
+        "label": "Input padding x",
+        "default": ".75rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-padding-y",
+        "label": "Input padding y",
+        "default": ".375rem",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "input-bg",
+        "label": "Input background",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-bg-disabled",
+        "label": "Input background disabled",
+        "default": "{gray-lighter}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-color",
+        "label": "Input color",
+        "default": "{gray}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "input-border-color",
+        "label": "Input border color",
+        "default": "#ccc",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-btn-border-width",
+        "label": "Input btn border width",
+        "default": "{border-width}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-box-shadow",
+        "label": "Input box shadow",
+        "default": "inset 0 1px 1px rgba(0,0,0,.075)",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-border-radius",
+        "label": "Input border radius",
+        "default": "{border-radius}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-border-radius-lg",
+        "label": "Input border radius large",
+        "default": "{border-radius-lg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-border-radius-sm",
+        "label": "Input border radius small",
+        "default": "{border-radius-sm}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "input-border-focus",
+        "label": "Input border focus",
+        "default": "#66afe9",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "input-box-shadow-focus",
+        "label": "Input box shadow focus",
+        "default": "rgba(102,175,233,.6)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "input-color-placeholder",
+        "label": "Input color placeholder",
+        "default": "#999",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-padding-x-sm",
+        "label": "Input padding x small",
+        "default": ".75rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-padding-y-sm",
+        "label": "Input padding y small",
+        "default": ".275rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-padding-x-lg",
+        "label": "Input padding x large",
+        "default": "1.25rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-padding-y-lg",
+        "label": "Input padding y large",
+        "default": ".75rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-height",
+        "label": "Input height",
+        "default": "(({font-size-base} * {line-height}) + ({input-padding-y} * 2))",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-height-lg",
+        "label": "Input height large",
+        "default": "(({font-size-lg} * {line-height-lg}) + ({input-padding-y-lg} * 2))",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-height-sm",
+        "label": "Input height small",
+        "default": "(({font-size-sm} * {line-height-sm}) + ({input-padding-y-sm} * 2))",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "form-group-margin-bottom",
+        "label": "Form group margin bottom",
+        "default": "{spacer-y}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-group-addon-bg",
+        "label": "Input group addon background",
+        "default": "{gray-lighter}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "input-group-addon-border-color",
+        "label": "Input group addon border color",
+        "default": "{input-border-color}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "cursor-disabled",
+        "label": "Cursor disabled",
+        "default": "not-allowed",
+        "info": ""
+      },
+      {
+        "type": "header",
+        "content": "Form validation icons"
+      },
+      {
+        "type": "text",
+        "id": "form-icon-success",
+        "label": "Form icon success",
+        "default": "\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==\"",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "form-icon-warning",
+        "label": "Form icon warning",
+        "default": "\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+\"",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "form-icon-danger",
+        "label": "Form icon danger",
+        "default": "\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=\"",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Dropdowns",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": " Dropdown menu container and contents."
+      },
+      {
+        "type": "color",
+        "id": "dropdown-bg",
+        "label": "Dropdown background",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "dropdown-border-color",
+        "label": "Dropdown border color",
+        "default": "rgba(0,0,0,.15)",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "dropdown-border-width",
+        "label": "Dropdown border width",
+        "default": "{border-width}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "dropdown-divider-bg",
+        "label": "Dropdown divider background",
+        "default": "#e5e5e5",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "dropdown-link-color",
+        "label": "Dropdown link color",
+        "default": "{gray-dark}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "dropdown-link-hover-color",
+        "label": "Dropdown link hover color",
+        "default": "darken({gray-dark}, 5%)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "dropdown-link-hover-bg",
+        "label": "Dropdown link hover background",
+        "default": "#f5f5f5",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "dropdown-link-active-color",
+        "label": "Dropdown link active color",
+        "default": "{component-active-color}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "dropdown-link-active-bg",
+        "label": "Dropdown link active background",
+        "default": "{component-active-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "dropdown-link-disabled-color",
+        "label": "Dropdown link disabled color",
+        "default": "{gray-light}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "dropdown-header-color",
+        "label": "Dropdown header color",
+        "default": "{gray-light}",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Z-index master list",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Warning': Avoid customizing these values. They're used for a bird's eye view of components dependent on the z-axis and are designed to all work together."
+      },
+      {
+        "type": "number",
+        "id": "zindex-navbar",
+        "label": "Zindex navbar",
+        "default": 1000,
+        "info": ""
+      },
+      {
+        "type": "number",
+        "id": "zindex-dropdown",
+        "label": "Zindex dropdown",
+        "default": 1000,
+        "info": ""
+      },
+      {
+        "type": "number",
+        "id": "zindex-popover",
+        "label": "Zindex popover",
+        "default": 1060,
+        "info": ""
+      },
+      {
+        "type": "number",
+        "id": "zindex-tooltip",
+        "label": "Zindex tooltip",
+        "default": 1070,
+        "info": ""
+      },
+      {
+        "type": "number",
+        "id": "zindex-navbar-fixed",
+        "label": "Zindex navbar fixed",
+        "default": 1030,
+        "info": ""
+      },
+      {
+        "type": "number",
+        "id": "zindex-navbar-sticky",
+        "label": "Zindex navbar sticky",
+        "default": 1030,
+        "info": ""
+      },
+      {
+        "type": "number",
+        "id": "zindex-modal-bg",
+        "label": "Zindex modal background",
+        "default": 1040,
+        "info": ""
+      },
+      {
+        "type": "number",
+        "id": "zindex-modal",
+        "label": "Zindex modal",
+        "default": 1050,
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Navbar",
+    "settings": [
+      {
+        "type": "text",
+        "id": "navbar-border-radius",
+        "label": "Navbar border radius",
+        "default": "{border-radius}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "navbar-padding-horizontal",
+        "label": "Navbar padding horizontal",
+        "default": "{spacer}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "navbar-padding-vertical",
+        "label": "Navbar padding vertical",
+        "default": "({spacer} / 2)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "navbar-dark-color",
+        "label": "Navbar dark color",
+        "default": "rgba(255,255,255,.5)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "navbar-dark-hover-color",
+        "label": "Navbar dark hover color",
+        "default": "rgba(255,255,255,.75)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "navbar-dark-active-color",
+        "label": "Navbar dark active color",
+        "default": "rgba(255,255,255,1)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "navbar-dark-disabled-color",
+        "label": "Navbar dark disabled color",
+        "default": "rgba(255,255,255,.25)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "navbar-light-color",
+        "label": "Navbar light color",
+        "default": "rgba(0,0,0,.3)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "navbar-light-hover-color",
+        "label": "Navbar light hover color",
+        "default": "rgba(0,0,0,.6)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "navbar-light-active-color",
+        "label": "Navbar light active color",
+        "default": "rgba(0,0,0,.8)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "navbar-light-disabled-color",
+        "label": "Navbar light disabled color",
+        "default": "rgba(0,0,0,.15)",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Navs",
+    "settings": [
+      {
+        "type": "text",
+        "id": "nav-link-padding",
+        "label": "Nav link padding",
+        "default": ".5em 1em",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "nav-link-hover-bg",
+        "label": "Nav link hover background",
+        "default": "{gray-lighter}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "nav-disabled-link-color",
+        "label": "Nav disabled link color",
+        "default": "{gray-light}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "nav-disabled-link-hover-color",
+        "label": "Nav disabled link hover color",
+        "default": "{gray-light}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "nav-tabs-border-color",
+        "label": "Nav tabs border color",
+        "default": "#ddd",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "nav-tabs-link-border-width",
+        "label": "Nav tabs link border width",
+        "default": "{border-width}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "nav-tabs-link-hover-border-color",
+        "label": "Nav tabs link hover border color",
+        "default": "{gray-lighter}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "nav-tabs-active-link-hover-bg",
+        "label": "Nav tabs active link hover background",
+        "default": "{body-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "nav-tabs-active-link-hover-color",
+        "label": "Nav tabs active link hover color",
+        "default": "{gray}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "nav-tabs-active-link-hover-border-color",
+        "label": "Nav tabs active link hover border color",
+        "default": "#ddd",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "nav-tabs-justified-link-border-color",
+        "label": "Nav tabs justified link border color",
+        "default": "#ddd",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "nav-tabs-justified-active-link-border-color",
+        "label": "Nav tabs justified active link border color",
+        "default": "{body-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "nav-pills-border-radius",
+        "label": "Nav pills border radius",
+        "default": "{border-radius}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "nav-pills-active-link-hover-bg",
+        "label": "Nav pills active link hover background",
+        "default": "{component-active-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "nav-pills-active-link-hover-color",
+        "label": "Nav pills active link hover color",
+        "default": "{component-active-color}",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Pagination",
+    "settings": [
+      {
+        "type": "text",
+        "id": "pagination-padding-x",
+        "label": "Pagination padding x",
+        "default": ".75rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pagination-padding-y",
+        "label": "Pagination padding y",
+        "default": ".5rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pagination-padding-x-sm",
+        "label": "Pagination padding x small",
+        "default": ".75rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pagination-padding-y-sm",
+        "label": "Pagination padding y small",
+        "default": ".275rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pagination-padding-x-lg",
+        "label": "Pagination padding x large",
+        "default": "1.5rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pagination-padding-y-lg",
+        "label": "Pagination padding y large",
+        "default": ".75rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pagination-color",
+        "label": "Pagination color",
+        "default": "{link-color}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "pagination-bg",
+        "label": "Pagination background",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pagination-border-width",
+        "label": "Pagination border width",
+        "default": "{border-width}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "pagination-border-color",
+        "label": "Pagination border color",
+        "default": "#ddd",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pagination-hover-color",
+        "label": "Pagination hover color",
+        "default": "{link-hover-color}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pagination-hover-bg",
+        "label": "Pagination hover background",
+        "default": "{gray-lighter}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "pagination-hover-border",
+        "label": "Pagination hover border",
+        "default": "#ddd",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "pagination-active-color",
+        "label": "Pagination active color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pagination-active-bg",
+        "label": "Pagination active background",
+        "default": "{brand-primary}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pagination-active-border",
+        "label": "Pagination active border",
+        "default": "{brand-primary}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pagination-disabled-color",
+        "label": "Pagination disabled color",
+        "default": "{gray-light}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "pagination-disabled-bg",
+        "label": "Pagination disabled background",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "pagination-disabled-border",
+        "label": "Pagination disabled border",
+        "default": "#ddd",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Pager",
+    "settings": [
+      {
+        "type": "text",
+        "id": "pager-bg",
+        "label": "Pager background",
+        "default": "{pagination-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pager-border-width",
+        "label": "Pager border width",
+        "default": "{border-width}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pager-border-color",
+        "label": "Pager border color",
+        "default": "{pagination-border-color}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pager-border-radius",
+        "label": "Pager border radius",
+        "default": "15px",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pager-hover-bg",
+        "label": "Pager hover background",
+        "default": "{pagination-hover-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pager-active-bg",
+        "label": "Pager active background",
+        "default": "{pagination-active-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pager-active-color",
+        "label": "Pager active color",
+        "default": "{pagination-active-color}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pager-disabled-color",
+        "label": "Pager disabled color",
+        "default": "{pagination-disabled-color}",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Jumbotron",
+    "settings": [
+      {
+        "type": "text",
+        "id": "jumbotron-padding",
+        "label": "Jumbotron padding",
+        "default": "2rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "jumbotron-bg",
+        "label": "Jumbotron background",
+        "default": "{gray-lighter}",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Form states and alerts",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Define colors for form feedback states and, by default, alerts."
+      },
+      {
+        "type": "color",
+        "id": "state-success-text",
+        "label": "State success text",
+        "default": "#3c763d",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "state-success-bg",
+        "label": "State success background",
+        "default": "#dff0d8",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "state-success-border",
+        "label": "State success border",
+        "default": "darken({state-success-bg}, 5%)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "state-info-text",
+        "label": "State info text",
+        "default": "#31708f",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "state-info-bg",
+        "label": "State info background",
+        "default": "#d9edf7",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "state-info-border",
+        "label": "State info border",
+        "default": "darken({state-info-bg}, 7%)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "state-warning-text",
+        "label": "State warning text",
+        "default": "#8a6d3b",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "state-warning-bg",
+        "label": "State warning background",
+        "default": "#fcf8e3",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "state-warning-border",
+        "label": "State warning border",
+        "default": "darken({state-warning-bg}, 5%)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "state-danger-text",
+        "label": "State danger text",
+        "default": "#a94442",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "state-danger-bg",
+        "label": "State danger background",
+        "default": "#f2dede",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "state-danger-border",
+        "label": "State danger border",
+        "default": "darken({state-danger-bg}, 5%)",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Cards",
+    "settings": [
+      {
+        "type": "text",
+        "id": "card-spacer-x",
+        "label": "Card spacer x",
+        "default": "1.25rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "card-spacer-y",
+        "label": "Card spacer y",
+        "default": ".75rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "card-border-width",
+        "label": "Card border width",
+        "default": "1px",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "card-border-radius",
+        "label": "Card border radius",
+        "default": "{border-radius}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "card-border-color",
+        "label": "Card border color",
+        "default": "#e5e5e5",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "card-border-radius-inner",
+        "label": "Card border radius inner",
+        "default": "{card-border-radius}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "card-cap-bg",
+        "label": "Card cap background",
+        "default": "#f5f5f5",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "card-bg",
+        "label": "Card background",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "card-link-hover-color",
+        "label": "Card link hover color",
+        "default": "#fff",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Tooltips",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Font, line-height, and color for body text, headings, and more."
+      },
+      {
+        "type": "text",
+        "id": "tooltip-max-width",
+        "label": "Tooltip maximal width",
+        "default": "200px",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "tooltip-color",
+        "label": "Tooltip color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "tooltip-bg",
+        "label": "Tooltip background",
+        "default": "#000",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "tooltip-opacity",
+        "label": "Tooltip opacity",
+        "default": ".9",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "tooltip-arrow-width",
+        "label": "Tooltip arrow width",
+        "default": "5px",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "tooltip-arrow-color",
+        "label": "Tooltip arrow color",
+        "default": "{tooltip-bg}",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Popovers",
+    "settings": [
+      {
+        "type": "color",
+        "id": "popover-bg",
+        "label": "Popover background",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "popover-max-width",
+        "label": "Popover maximal width",
+        "default": "276px",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "popover-border-width",
+        "label": "Popover border width",
+        "default": "{border-width}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "popover-border-color",
+        "label": "Popover border color",
+        "default": "rgba(0,0,0,.2)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "popover-title-bg",
+        "label": "Popover title background",
+        "default": "darken({popover-bg}, 3%)",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "popover-arrow-width",
+        "label": "Popover arrow width",
+        "default": "10px",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "popover-arrow-color",
+        "label": "Popover arrow color",
+        "default": "{popover-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "popover-arrow-outer-width",
+        "label": "Popover arrow outer width",
+        "default": "({popover-arrow-width} + 1)",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "popover-arrow-outer-color",
+        "label": "Popover arrow outer color",
+        "default": "fade-in({popover-border-color}, 0.05)",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Labels",
+    "settings": [
+      {
+        "type": "text",
+        "id": "label-default-bg",
+        "label": "Label default background",
+        "default": "{gray-light}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "label-primary-bg",
+        "label": "Label primary background",
+        "default": "{brand-primary}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "label-success-bg",
+        "label": "Label success background",
+        "default": "{brand-success}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "label-info-bg",
+        "label": "Label info background",
+        "default": "{brand-info}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "label-warning-bg",
+        "label": "Label warning background",
+        "default": "{brand-warning}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "label-danger-bg",
+        "label": "Label danger background",
+        "default": "{brand-danger}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "label-color",
+        "label": "Label color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "label-link-hover-color",
+        "label": "Label link hover color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "label-font-weight",
+        "label": "Label font weight",
+        "default": "bold",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Modals",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Padding applied to the modal body."
+      },
+      {
+        "type": "text",
+        "id": "modal-inner-padding",
+        "label": "Modal inner padding",
+        "default": "15px",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "modal-title-padding",
+        "label": "Modal title padding",
+        "default": "15px",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "modal-title-line-height",
+        "label": "Modal title line height",
+        "default": "{line-height}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "modal-content-bg",
+        "label": "Modal content background",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "modal-content-border-color",
+        "label": "Modal content border color",
+        "default": "rgba(0,0,0,.2)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "modal-backdrop-bg",
+        "label": "Modal backdrop background",
+        "default": "#000",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "modal-backdrop-opacity",
+        "label": "Modal backdrop opacity",
+        "default": ".5",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "modal-header-border-color",
+        "label": "Modal header border color",
+        "default": "#e5e5e5",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "modal-footer-border-color",
+        "label": "Modal footer border color",
+        "default": "{modal-header-border-color}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "modal-lg",
+        "label": "Modal large",
+        "default": "900px",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "modal-md",
+        "label": "Modal medium",
+        "default": "600px",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "modal-sm",
+        "label": "Modal small",
+        "default": "300px",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Alerts",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Define alert colors, border radius, and padding."
+      },
+      {
+        "type": "text",
+        "id": "alert-padding",
+        "label": "Alert padding",
+        "default": "15px",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-border-radius",
+        "label": "Alert border radius",
+        "default": "{border-radius}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-link-font-weight",
+        "label": "Alert link font weight",
+        "default": "bold",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-border-width",
+        "label": "Alert border width",
+        "default": "{border-width}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-success-bg",
+        "label": "Alert success background",
+        "default": "{state-success-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-success-text",
+        "label": "Alert success text",
+        "default": "{state-success-text}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-success-border",
+        "label": "Alert success border",
+        "default": "{state-success-border}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-info-bg",
+        "label": "Alert info background",
+        "default": "{state-info-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-info-text",
+        "label": "Alert info text",
+        "default": "{state-info-text}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-info-border",
+        "label": "Alert info border",
+        "default": "{state-info-border}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-warning-bg",
+        "label": "Alert warning background",
+        "default": "{state-warning-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-warning-text",
+        "label": "Alert warning text",
+        "default": "{state-warning-text}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-warning-border",
+        "label": "Alert warning border",
+        "default": "{state-warning-border}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-danger-bg",
+        "label": "Alert danger background",
+        "default": "{state-danger-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-danger-text",
+        "label": "Alert danger text",
+        "default": "{state-danger-text}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "alert-danger-border",
+        "label": "Alert danger border",
+        "default": "{state-danger-border}",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Progress bars",
+    "settings": [
+      {
+        "type": "color",
+        "id": "progress-bg",
+        "label": "Progress background",
+        "default": "#f5f5f5",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "progress-bar-color",
+        "label": "Progress bar color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "progress-border-radius",
+        "label": "Progress border radius",
+        "default": "{border-radius}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "progress-bar-bg",
+        "label": "Progress bar background",
+        "default": "{brand-primary}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "progress-bar-success-bg",
+        "label": "Progress bar success background",
+        "default": "{brand-success}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "progress-bar-warning-bg",
+        "label": "Progress bar warning background",
+        "default": "{brand-warning}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "progress-bar-danger-bg",
+        "label": "Progress bar danger background",
+        "default": "{brand-danger}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "progress-bar-info-bg",
+        "label": "Progress bar info background",
+        "default": "{brand-info}",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "List group",
+    "settings": [
+      {
+        "type": "color",
+        "id": "list-group-bg",
+        "label": "List group background",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "list-group-border-color",
+        "label": "List group border color",
+        "default": "#ddd",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "list-group-border-width",
+        "label": "List group border width",
+        "default": "{border-width}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "list-group-border-radius",
+        "label": "List group border radius",
+        "default": "{border-radius}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "list-group-hover-bg",
+        "label": "List group hover background",
+        "default": "#f5f5f5",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "list-group-active-color",
+        "label": "List group active color",
+        "default": "{component-active-color}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "list-group-active-bg",
+        "label": "List group active background",
+        "default": "{component-active-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "list-group-active-border",
+        "label": "List group active border",
+        "default": "{list-group-active-bg}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "list-group-active-text-color",
+        "label": "List group active text color",
+        "default": "lighten({list-group-active-bg}, 40%)",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "list-group-disabled-color",
+        "label": "List group disabled color",
+        "default": "{gray-light}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "list-group-disabled-bg",
+        "label": "List group disabled background",
+        "default": "{gray-lighter}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "list-group-disabled-text-color",
+        "label": "List group disabled text color",
+        "default": "{list-group-disabled-color}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "list-group-link-color",
+        "label": "List group link color",
+        "default": "#555",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "list-group-link-hover-color",
+        "label": "List group link hover color",
+        "default": "{list-group-link-color}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "list-group-link-heading-color",
+        "label": "List group link heading color",
+        "default": "#333",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Image thumbnails",
+    "settings": [
+      {
+        "type": "text",
+        "id": "thumbnail-padding",
+        "label": "Thumbnail padding",
+        "default": ".25rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "thumbnail-bg",
+        "label": "Thumbnail background",
+        "default": "{body-bg}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "thumbnail-border-width",
+        "label": "Thumbnail border width",
+        "default": "{border-width}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "thumbnail-border-color",
+        "label": "Thumbnail border color",
+        "default": "#ddd",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "thumbnail-border-radius",
+        "label": "Thumbnail border radius",
+        "default": "{border-radius}",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Breadcrumbs",
+    "settings": [
+      {
+        "type": "text",
+        "id": "breadcrumb-padding-vertical",
+        "label": "Breadcrumb padding vertical",
+        "default": ".75rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "breadcrumb-padding-horizontal",
+        "label": "Breadcrumb padding horizontal",
+        "default": "1rem",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "breadcrumb-bg",
+        "label": "Breadcrumb background",
+        "default": "{gray-lighter}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "breadcrumb-divider-color",
+        "label": "Breadcrumb divider color",
+        "default": "{gray-light}",
+        "info": ""
+      },
+
+      {
+        "type": "text",
+        "id": "breadcrumb-active-color",
+        "label": "Breadcrumb active color",
+        "default": "{gray-light}",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "breadcrumb-divider",
+        "label": "Breadcrumb divider",
+        "default": "\"/\"",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Carousel",
+    "settings": [
+      {
+        "type": "text",
+        "id": "carousel-text-shadow",
+        "label": "Carousel text shadow",
+        "default": "0 1px 2px rgba(0,0,0,.6)",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "carousel-control-color",
+        "label": "Carousel control color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "carousel-control-width",
+        "label": "Carousel control width",
+        "default": "15%",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "carousel-control-opacity",
+        "label": "Carousel control opacity",
+        "default": ".5",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "carousel-control-font-size",
+        "label": "Carousel control font size",
+        "default": "20px",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "carousel-indicator-active-bg",
+        "label": "Carousel indicator active background",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "carousel-indicator-border-color",
+        "label": "Carousel indicator border color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "carousel-caption-color",
+        "label": "Carousel caption color",
+        "default": "#fff",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Close",
+    "settings": [
+      {
+        "type": "text",
+        "id": "close-font-weight",
+        "label": "Close font weight",
+        "default": "bold",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "close-color",
+        "label": "Close color",
+        "default": "#000",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "close-text-shadow",
+        "label": "Close text shadow",
+        "default": "0 1px 0 #fff",
+        "info": ""
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "color",
+        "id": "code-color",
+        "label": "Code color",
+        "default": "#bd4147",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "code-bg",
+        "label": "Code background",
+        "default": "#f7f7f9",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "kbd-color",
+        "label": "Kbd color",
+        "default": "#fff",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "kbd-bg",
+        "label": "Kbd background",
+        "default": "#333",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "pre-bg",
+        "label": "Pre background",
+        "default": "#f7f7f9",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pre-color",
+        "label": "Pre color",
+        "default": "{gray-dark}",
+        "info": ""
+      },
+      {
+        "type": "color",
+        "id": "pre-border-color",
+        "label": "Pre border color",
+        "default": "#ccc",
+        "info": ""
+      },
+      {
+        "type": "text",
+        "id": "pre-scrollable-max-height",
+        "label": "Pre scrollable maximal height",
+        "default": "340px",
+        "info": ""
       }
     ]
   }

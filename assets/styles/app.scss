@@ -1,7 +1,31 @@
-// variables TODO move to locals
-$font-family-sans-serif: 'Ubuntu', "Helvetica Neue", Helvetica, Arial, sans-serif;
+// https://www.google.com/fonts#UsePlace:use/Collection:Source+Sans+Pro
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+// https://www.google.com/fonts#UsePlace:use/Collection:Roboto
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,400italic,300italic,900italic,700italic,500italic,500,700,900);
+// https://www.google.com/fonts#UsePlace:use/Collection:Ubuntu
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
 
 // wrap theme variables to bootstrap variables
+
+$spacers: (
+  0: (
+    x:   $spacer-0-x,
+    y:   $spacer-0-y
+  ),
+  1: (
+    x:   $spacer-1-x,
+    y:   $spacer-1-y
+  ),
+  2: (
+    x:   $spacer-2-x,
+    y:   $spacer-2-y
+  ),
+  3: (
+    x:   $spacer-3-x,
+    y:   $spacer-3-y
+  )
+);
+
 $grid-breakpoints: (
   xs: $grid-breakpoint-xs,
   sm: $grid-breakpoint-sm,
@@ -20,18 +44,9 @@ $container-max-widths: (
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-// https://www.google.com/fonts#UsePlace:use/Collection:Ubuntu
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
-// https://www.google.com/fonts#UsePlace:use/Collection:Roboto
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,400italic,300italic,900italic,700italic,500italic,500,700,900);
-
-body {
-  font-weight: 400;
-  // font-style: italic;
-}
-
 .navbar-brand {
   min-width: 40px;
+  // font-family: "Ubuntu", $font-family-sans-serif; 
   background-image: url(../images/logo_inverse.svg);
   background-repeat: no-repeat;
   background-position: left center;
