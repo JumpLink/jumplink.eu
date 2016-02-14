@@ -42,7 +42,7 @@ $container-max-widths: (
 );
 
 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "bootstrap/scss/bootstrap.scss";
 
 .navbar-brand {
   min-width: 40px;
